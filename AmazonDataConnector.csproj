@@ -8,26 +8,17 @@
   <ItemGroup>
     <PackageReference Include="AWSSDK.SecurityToken" Version="3.7.1.182" />
     <PackageReference Include="AWSSDK.SQS" Version="3.7.2.86" />
+    <PackageReference Include="CSharpAmazonSpAPI" Version="1.4.18" />
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.21.0" />
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="3.1.27" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.27" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="3.1.27" />
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.25" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.25">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="RestSharp" Version="108.0.1" />
-    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-    <PackageReference Include="System.Reflection" Version="4.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="FikaAmazonAPI">
-      <HintPath>..\Amazon-SP-API-CSharp\Source\FikaAmazonAPI\bin\Release\netstandard2.0\FikaAmazonAPI.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>

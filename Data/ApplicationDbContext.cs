@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using AmazonDataConnector.Models;
 
-namespace amazonDataConnector.Data
-{
-    public class ApplicationDbContext : IdentityDbContext
-    {
+namespace amazonDataConnector.Data {
+    public class ApplicationDbContext :IdentityDbContext {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
+            : base(options) {
         }
-        public DbSet<AmazonDataConnector.Models.AcuOrder> AcuOrder { get; set; }
+        public DbSet<AmazonDataConnector.Models.AcuOrder> AcuOrder {
+            get; set;
+        }
     }
 }
