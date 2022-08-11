@@ -1,0 +1,21 @@
+﻿@model AmazonDataConnector.Models.AcuOrder
+<h4>Get a Amazon order</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ShowSearchForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="AmzOrderList" class="control-label"></label>
+                <input asp-for="AmzOrderList" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Get" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
