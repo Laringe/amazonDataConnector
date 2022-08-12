@@ -1,8 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace amazonDataConnector.Data.Migrations {
-    public partial class AmazonTables :Migration {
-        protected override void Up(MigrationBuilder migrationBuilder) {
+namespace amazonDataConnector.Data.Migrations
+{
+    public partial class AmazonTables : Migration
+    {
+        protected override void Up(MigrationBuilder migrationBuilder)
+        {
             migrationBuilder.DropColumn(
                 name: "AmzOrderId",
                 table: "AcuOrder");
@@ -12,7 +15,8 @@ namespace amazonDataConnector.Data.Migrations {
                 table: "AcuOrder");
         }
 
-        protected override void Down(MigrationBuilder migrationBuilder) {
+        protected override void Down(MigrationBuilder migrationBuilder)
+        {
             migrationBuilder.AddColumn<string>(
                 name: "AmzOrderId",
                 table: "AcuOrder",
