@@ -5,16 +5,18 @@ namespace AmazonDataConnector.Models {
         public string AmzOrderId {
             get; set;
         }
-        private object Details;
+        private object Items;
         AmazonConnection amazonConnection;
         public OrderItems(AmazonConnection amazonConnection) {
             this.amazonConnection = amazonConnection;
         }
-        public object GetDetails() {
-            return Details;
+        public OrderItems(string amzOrderId, AmazonConnection amazonConnection) {
+            AmzOrderId = amzOrderId;
+            this.GetOrderItems();
+            this.amazonConnection = amazonConnection;
         }
         public void GetOrderItems() {
-            var Items = amazonConnection.Orders.GetOrderItems(AmzOrderId);
+            Items = amazonConnection.Orders.GetOrderItems(AmzOrderId);
         }
     }
 }
